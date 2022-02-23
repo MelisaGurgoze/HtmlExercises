@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Login</title>
+    <style>
+      :root{
+          --box-color:rgba(221, 221, 221, 0.5);
+          --icon-boxcolor:#00264d;
+
+      }
+      *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-image:url(bgl.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% ;
+        }
+.content{
+    width:500px ;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--box-color);
+    border-radius: 30px;
+}
+.main{
+    margin: 80px 50px 10px;
+}
+.icon-box{
+  width: 115px;
+  height: 115px;
+  background-color: var(--icon-boxcolor);
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+
+}
+.icon-box>i{
+font-size: 50px;
+color: white;
+
+}
+
+
+.form-group{
+    width: 250px;
+    position:absolute;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 52px;
+
+
+   
+}
+.form-group>i{
+width: 25px;
+height: 25px;
+color:white;
+margin-left: 10px;
+background-color: darkblue;
+border-radius:5px 0px 0px 5px;
+line-height: 31px;
+text-align: center;
+padding: 5px;
+
+}
+input:focus{
+    outline: none;
+}
+
+input{ 
+
+    height: 25px;
+    width: 189px;
+    margin-left: -1%;
+    margin-top: 20%;
+
+}
+
+.btnlogin{
+ width: 330px;
+ height: 30px;
+ margin-top: 205px;
+ margin-left: 86px;
+ border-radius: 0px 0px 15px 15px;
+ color: white;
+ background-color:#00264d;
+ border: none;
+ font-weight: bold;
+
+ -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+                    from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+           <div class="icon-box">
+            <i class="fa-regular fa-user"></i>
+           </div>
+
+           <div class="form-group">
+            <i class="fa-solid fa-user"></i>  
+            <input type="text" placeholder="User Name">
+
+           <div class="form-group" style="margin-top: -6px;">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password"> 
+
+           </div>
+             
+
+            </div>
+              
+           </div>
+           <button class="btnlogin">Login</button>
+        </div>
+
+    </div>
+   
+    
+</body>
+</html>
